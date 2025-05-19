@@ -102,8 +102,7 @@ button {
 button:hover {
   background-color: rgba(80, 156, 13, 0.7);
   color: black;
-  transform: rotate(360deg) scale(1.1);
-  transition: 2s;
+  transition: 1s;
 }
 
 button:active {

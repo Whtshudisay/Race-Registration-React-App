@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Routes, Route } from "react-router-dom"; // Remove BrowserRouter here
 import "./App.css";
 import ThankYou from "./ThankYou";
+// import Button from '@mui/material/Button';
 
 function RegistrationForm() {
   const navigate = useNavigate();
@@ -85,7 +86,13 @@ function RegistrationForm() {
           <p>Processing your registration...</p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="registration-form">
+          <form onSubmit={handleSubmit} className="registration-form">
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+                  <button class="navbar-text">About Us</button>
+              </div>
+            </nav>
+            
           <h1 id="rr">Race Registration</h1>
           
           {error && <div className="error-message">{error}</div>}

@@ -6,6 +6,7 @@ import ThankYou from './ThankYou';
 import './index.js'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <Routes>
